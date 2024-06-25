@@ -56,9 +56,9 @@ function Marketplace({ contract, isConnected, account }) {
           return { ...nft, metadata,nft,owner };
         })
       );
+      setIsLoading(false);
       console.log("Updated NFTs:", updatedNFTs);
       setNfts(updatedNFTs);
-      setIsLoading(false);
     };
 
     const fetchNFTs = async () => {
