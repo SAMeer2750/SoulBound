@@ -116,13 +116,13 @@ function Marketplace({ contract, isConnected, account }) {
             <>
               <div className="pageTitle">
                 <p className="heading">
-                  "Step into the captivating realm of Meta Mosaic, where a
+                  "Step into the captivating realm of Soul-Bound, where a
                   kaleidoscope of breathtaking NFTs awaits to mesmerize your
-                  senses."
+                  senses. By IGNITUS NETWORKS"
                 </p>
               </div>
               <p className="connectWalletMsg">
-                Connect your wallet in order to see listed NFTs.
+                Connect your wallet in order to see your NFTs.
               </p>
             </>
           )}

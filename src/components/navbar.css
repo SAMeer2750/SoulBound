@@ -13,15 +13,15 @@
 
 .navbar .logo {
   width: 100%;
-  height: 12vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  height: 11vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   transition: 0.5s cubic-bezier(0.6, 0.03, 0.28, 0.98);
   transform: scale(0.98);
 }
 
 .navbar .right {
-  width: 55%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
