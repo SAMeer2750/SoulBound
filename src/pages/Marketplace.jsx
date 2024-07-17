@@ -20,9 +20,9 @@ function Marketplace({ contract, isConnected, account }) {
 
     let sbts = []
     const totalSupply = await contract.getTotalCount();
-    console.log(parseInt(totalSupply));
+    console.log(parseInt(totalSupply)-2);
 
-    for(let i = 0 ; i< parseInt(totalSupply); i++){
+    for(let i = 2 ; i< parseInt(totalSupply); i++){
 
       sbts.push(i+1);
     }
@@ -47,7 +47,7 @@ function Marketplace({ contract, isConnected, account }) {
       setIsLoading(true);
       const updatedNFTs = await Promise.all(
         nfts.map(async (nft) => {
-          console.log(`-----`,nft);
+          console.log(`-----`,nft -2);
           const uri = await contract.tokenURI(nft);
           console.log(uri);
           const metadata = await fetchNFTMetadata(uri);
